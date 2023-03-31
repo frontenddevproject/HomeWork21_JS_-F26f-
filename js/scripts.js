@@ -28,6 +28,6 @@ function MyClass (a, privateArguments) {
 
 }
 
-const instanceClass = new MyClass(10, [{private: "private"}, {private: "private2"}, {private2: "private2"}]);
+const instanceClass = new MyClass(10, [{private: "private2"}, {private: "private1"}, {private3: "private"}]);
 
 console.log(instanceClass, "instance");
