@@ -1,17 +1,23 @@
+
 function MyClass (a, privateArguments) {
    this.a = a;
    
     const keysArray = privateArguments.reduce((acc, el, i, arr) => {
-      let data = Object.keys(el).join();
+      let data = Object.keys(Object.values(arr)[i]).join();
       if(!acc.includes(data)){
          acc.push(data);   
       }
       return acc;
    }, [])
    for(let i = 0; i < privateArguments.length; i++){
-     
+   // if ()
    }
-   console.log(keysArray)
+	console.log(keysArray)
+   console.log(Object.keys(Object.values(privateArguments)))
+
+
+//  Еще в разработке, до конца дня сделаю
+
 
    // console.log(Object.keys(Object.values(privateArguments)[2]));
    // privateArguments.forEach((obj) => {
